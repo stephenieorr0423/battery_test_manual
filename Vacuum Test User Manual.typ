@@ -63,7 +63,8 @@ This test will be performed once after the vibration test.
 A vacuum test is performed to ensure the battery's integrity before using it and prevents potential safety hazards. 
 = Equipment
 
-#text(16pt, [- Vacuum Chamber])
+#text(16pt, [- Vacuum Chamber]) 
+#image("vacuumchamber.jpg", width: 180pt)
 A vacuum chamber is a sealed enclosure from which air
 and other gases are removed to create a low-pressure environment
 that simulates conditions like high altitudes or outer space. 
@@ -74,9 +75,10 @@ in aerospace applications. This helps evaluate the battery’s
 structural integrity, safety, and electrical behavior in 
 low-pressure environments, ensuring it can operate reliably 
 in conditions far different from normal atmospheric pressure.
+#text("--", fill: white)
 
- Shown in Figure 1 
-#image("vacuumchamber.jpg", width: 180pt)
+#text("--", fill: white)
+
 #text("--", fill: white)
 
 #text("--", fill: white)
@@ -88,6 +90,7 @@ in conditions far different from normal atmospheric pressure.
 #text("--", fill: white)
 
 #text(16pt, [- Vacuum Pump])
+#image("vacuumpump.jpg", width: 140pt)
 A vacuum pump is a device that removes air and gas 
 molecules from a sealed space to create a vacuum. 
 In the context of testing a Li-ion battery, the vacuum 
@@ -99,28 +102,43 @@ swelling, leakage, or changes in performance. The vacuum pump
 is essential for creating controlled conditions that help 
 ensure the battery’s safety and reliability in extreme 
 environments. 
-Shown in Figure 2
-#image("vacuumpump.jpg", width: 140pt)
 #text(16pt, [- Pressure Gauge])
-This tool is used to measure the difference in pressure between the device and the surrounding atmosphere.
 #image("pressuregauge.jpg", width: 80pt)
+This tool is used to measure the difference in pressure between the device and the surrounding atmosphere. This tool is going to go on and be apart of the Vacuum Pump.
 
 #text(16pt, [- Timer])
 This tool is used to ensure the test is done for a precise and defined duration.
 #text(16pt, [- Insulated Battery Tray])
 
 This tool prevents the battery from shifting and moving and prevents any damage to the battery that is not caused from the altitude or pressure 
-#image("tray.jpg", width: 130pt)
-#text(16pt, [- Microscope])
 
-This is optional but can be used to better the inspection of the battery
+#text(16pt, [- Microscope])
 #image("microscope.jpg", width: 110pt)
+This is optional but can be used to better the inspection of the battery
+
 #text(16pt, [- Multimeter]) 
-This is used to measure voltage before and after the test
 #image("multimeter.jpg", width: 50pt)
+This is used to measure voltage before and after the test
+
+#text("--", fill: white)
+
+#text("--", fill: white)
+
+#text("--", fill: white)
+
+#text("--", fill: white)
+
+#text("--", fill: white)
+
+#text("--", fill: white)
+
+#text("--", fill: white)
+
+#text("--", fill: white)
+
 = Procedure
 == Set up
-First do a OCV test and then a visual check of the battery, look for any damage, swelling, corrosion, or leakage. Also, make sure that the battery is not fully charged. It should be about 30%-60% charged. 
+First do a OCV test and then a visual check of the battery, look for any damage, swelling, corrosion, or leakage. Also, make sure that the battery is not fully charged. It should be about 30-60% charged. 
 == Preparing the Vacuum Chamber
 Place the battery in the vacuum on a non-conductive, flat surface. Use a tray to isolate the battery from direct contact with the metal of the vacuum. 
 == Set up instruments
