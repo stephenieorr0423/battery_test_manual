@@ -63,7 +63,7 @@ The Open Circuit Voltage (OCV) Measurement will be done three times. Once before
 An open circuit voltage test measures the voltage of a power source when it's not connected to a load. It is a way to assess the condition of the source by observing its potentail difference under ideal conditions with no current being drawn. 
 == Importance
 You need to perform this test to measure the voltage of a battery or other electrical source when no current is flowing. The open circuit voltage is an imporant aspect to know when testing batteries. It allows the tester to assess the batteries health for potential use. Open Circuit Voltage also allows for us to understand how much energy is remaining in the battery after a certain amount of charges which helps optimize performance, safety, and lifespan. 
-= Equipment
+= Equipments
 #text(16pt, [- Multimeter]) 
 #image("pngtree-cartoon-multimeter-electrical-equipment-png-image_5633205.png", width: 180pt)
 - This tool is used to measure voltage before and after the test.
