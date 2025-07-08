@@ -1,10 +1,11 @@
 // #import "@preview/min-manual:0.1.0": manual, arg, univ, pip, crate, pkg, extract
+
 #import "template.typ": manual, arg, univ, pip, crate, pkg, extract
 
 #show: manual.with(
   title: "Open Circuit Voltage Test",
   type_of_manual: "User Manual",
-  description: "Revision 1                     12 June 2025",
+  description: "Revision 2                     7 July 2025",
   // authors: "Mitchell Bailey <@mitbailey>",
   package: "Name of Software",
   license: "",

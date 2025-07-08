@@ -4,7 +4,7 @@
 #show: manual.with(
   title: "Charge Cycling Test",
   type_of_manual: "User Manual",
-  description: "Revision 1                     12 June 2025",
+  description: "Revision 2                     7 July 2025",
   // authors: "Mitchell Bailey <@mitbailey>",
   package: "Name of Software",
   license: "",
