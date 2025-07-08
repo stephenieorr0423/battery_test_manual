@@ -113,6 +113,10 @@ Parameters are used to control and monitor the charging and discharging of a bat
 
 #text("--", fill: white)
 
+#text("--", fill: white)
+
+#text("--", fill: white)
+
 == Charge Cycling Test
 Begin the automated charge-discharge cycle. Ensuring to log the following data: Voltage(V),Current(mA), Temperature(°C), Capacity (mAh), and Internal resistance. 
 

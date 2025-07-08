@@ -71,10 +71,6 @@ You need to perform this test to measure the voltage of a battery or other elect
 #text("--", fill: white)
 
 #text("--", fill: white)
-  
-#text("--", fill: white)
-
-#text("--", fill: white)
 
 #text(16pt, [- Battery])
  - Renata ICP543759PMT
