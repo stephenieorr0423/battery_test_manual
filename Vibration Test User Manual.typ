@@ -69,24 +69,26 @@ world handling. The Lithium Ion battery is often exposed to continuous vibration
 #image("vibrationchamber.jpg", width: 180pt)
 This tool generates the vibrations for the battery.
 
-#text("--", fill: white)
-
-#text("--", fill: white)
-
-#text("--", fill: white)
-
 - Amplifier
 #image("amplifier.jpg", width: 180pt)
 Provides power to the shaker to create the desired vibration profile.
 - Vibration Controller
+#image("VibDia.png", width: 180pt) 
 #image("vibration controller.jpg", width: 180pt)
 Generates vibration profiles and programmed to control the shaker.
+
+#text("--", fill: white)
+
+#text("--", fill: white)
+
 - Accelerometers (Sensors)
 #image("Accelerometers.jpg", width: 140pt)
-Accelerometers are mounted on or near the battery. This is used to measure the input vibration levels. Measure the vibration acceleration of the battery or the test object.
+Accelerometers are mounted on or near the battery. This is used to measure the input vibration levels. Accelerometers are devices that measure the proper acceleration of an object. Proper acceleration refers to the acceleration (the rate of change of velocity) of the object relative to an observer who is in free fall (that is, relative to an inertial frame of reference)
 - Thermocouples
 #image("thermocouple copy.jpg", width: 270pt)
-This is a sensor that measures temperature. It consists of two different types of metals, 
+
+#image("thermocouple diagram.png", width: 150pt)
+This is a sensor that measures temperature. It consists of two different types of metals joined together. This thermocouple junction creates a voltage that changes with temperature and is then measured and converted to a temperature reading. 
 - Fixtures
 Used to securely mount the battery on the vibration shaker or table.
 

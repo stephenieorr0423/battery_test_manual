@@ -56,13 +56,12 @@
 
 #set heading(numbering: "1.")
 
-= Introduction
-== When the Test Will Take place
-The Charge Cycling Test will be done two times. Once before the vibrational test and once after the vacuum test.
+= Charge Cycling Test
+The Charge Cycling Test is a test the requires the repeated charge and discharge of a lithium-ion battery. Normal battery use involves repeated charging and discharging cycles. This gradually ages a battery and can trigger internal fault protection systems. These safety systems are designed to prevent battery failures while under harsh conditions and protect surrounding electronic equipment from damage. As lithium-ion batteries are cycled from full to low charge, their capacity slowly degrades, they lose the ability to hold a full charge and cannot recharge to the same extent as when new. However, with proper use and high quality construction, these batteries can withstand hundreds to thousands of charge/discharge cycles, depending on how they are used. To ensure efficient and complete charging and discharging, it is important to understand the battery's charging behavior. Cycling the batteries from maximum to minimum charge not only helps assess their health and recharge capacity but also verifies that they are operating as expected and are reliable under actual use conditions. This test will be done two times. Once before the vibrational test and once after the vacuum test. 
 == Importance
- You perform a charge cycling test to evaluate the performance of the battery, predict their lifespan, and assess their durability in real world conditions. The purpose of this test is to apply a constant current to batteries, super capacitors, or electrode materials in order to charge and discharge between defined voltage limits. This will allow you to see how a material or cell's capacity, efficiency, and similar parameters are affected as a function of cycle number.
+ The purpose of this test is to apply a constant current to batteries, super capacitors, or electrode materials in order to charge and discharge between defined voltage limits. This will allow you to see how a material or cell's capacity, efficiency, and similar parameters are affected as a function of cycle number. You perform a charge cycling test to evaluate the performance of the battery, predict their lifespan, and assess their durability in real world conditions. 
  == Warning
- Never leave a lithium-ion battery unattended during the test. In case of swelling, venting, or rapid temperature increase (>45°C in < 10 Seconds), immediatly stop the test and remove the abttery to a fire safe location.
+ Never leave a lithium-ion battery unattended during the test. In case of swelling, venting, or rapid temperature increase (>45°C in < 10 Seconds), immediatly stop the test and remove the battery to a fire safe location.
 = Equipment
 - Voltmeter
 #image("voltmeter.jpg", width: 180pt)
@@ -119,10 +118,9 @@ Parameters are used to control and monitor the charging and discharging of a bat
 
 == Charge Cycling Test
 Begin the automated charge-discharge cycle. Ensuring to log the following data: Voltage(V),Current(mA), Temperature(°C), Capacity (mAh), and Internal resistance. 
-
 Rest for 30 minutes after charge
 Then you are going to discharge to 3.0V using the Constant Charge method. Discharge at 0.5C (660 mA). Then rest the battery again. Repeat this cycle greater than or equal to 500 cycles.
-== Monitor and Observation
+== Monitor and Observe
 Make sure to watch for any temperature rises. If the battery reaches a temperature greater than 45°C then stop the test. Watch for capacity drops and any swelling, venting, or irregular behavior.
 == Data Analysis
 After a certain amount of cycles it is important to do quality checks on the battery to see how it is performing in between the test. Recommended analysis points include the initial cycle (Cycle 0), an early cycle (Cycle 10), ongoing checks (Every 25 to 50 Cycles), half-life cycle (Cycle 250), and the End-Life Cycle (Cycle 500). The key metrics to assess include capacity, internal resistance (IR), and State of Health (SoH).
