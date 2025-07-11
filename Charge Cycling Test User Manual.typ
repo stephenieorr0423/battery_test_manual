@@ -57,39 +57,14 @@
 #set heading(numbering: "1.")
 
 = Charge Cycling Test
-The Charge Cycling Test is a test the requires the repeated charge and discharge of a lithium-ion battery. Normal battery use involves repeated charging and discharging cycles. This gradually ages a battery and can trigger internal fault protection systems. These safety systems are designed to prevent battery failures while under harsh conditions and protect surrounding electronic equipment from damage. As lithium-ion batteries are cycled from full to low charge, their capacity slowly degrades, they lose the ability to hold a full charge and cannot recharge to the same extent as when new. However, with proper use and high quality construction, these batteries can withstand hundreds to thousands of charge/discharge cycles, depending on how they are used. To ensure efficient and complete charging and discharging, it is important to understand the battery's charging behavior. Cycling the batteries from maximum to minimum charge not only helps assess their health and recharge capacity but also verifies that they are operating as expected and are reliable under actual use conditions. This test will be done two times. Once before the vibrational test and once after the vacuum test. 
-== Importance
- The purpose of this test is to apply a constant current to batteries, super capacitors, or electrode materials in order to charge and discharge between defined voltage limits. This will allow you to see how a material or cell's capacity, efficiency, and similar parameters are affected as a function of cycle number. You perform a charge cycling test to evaluate the performance of the battery, predict their lifespan, and assess their durability in real world conditions. 
- == Warning
- Never leave a lithium-ion battery unattended during the test. In case of swelling, venting, or rapid temperature increase (>45°C in < 10 Seconds), immediatly stop the test and remove the battery to a fire safe location.
-= Equipment
-- Voltmeter
-#image("voltmeter.jpg", width: 180pt)
-This tool is used to measure voltage and potential difference between two points in a circuit
-- Programmable Power Supply
-#image("Programmable power supply.jpg", width: 180pt) 
-This is the device that is going to doing the actual charging and discharging of the Lithium Ion battery
-- Battery Analyzer 
-#image("battery analyser.jpg", width: 180pt)
-This tool is used to monitor and evaluate the performance of a battery during repeated charge and discharge
-- Thermal sensor or thermocouple
-This tool is used to monitor the batteries temperature during the charging and discharging
-- Protective casing (if required) 
-This is used to enhance the performance, stability, and safety of the battery
-- Datasheet for reference
-
-#text("--", fill: white)
-
-#text("--", fill: white)
-
-#text("--", fill: white)
-
-#text("--", fill: white)
+The Charge Cycling Test is a test that requires the repeated charge and discharge of a lithium-ion battery. Normal battery use involves repeated charging and discharging cycles. This gradually ages a battery and can trigger internal fault protection systems. These safety systems are designed to prevent battery failures while under harsh conditions and protect surrounding electronic equipment from damage. As lithium-ion batteries are cycled from full to low charge, their capacity slowly degrades, they lose the ability to hold a full charge, and cannot recharge fully like the battery used to when new. With proper use and high-quality construction, these batteries can withstand hundreds to thousands of charge/discharge cycles, depending on how they are used. To ensure efficient and complete charging and discharging, it is important to understand the battery's charging behavior. Cycling the batteries from maximum to minimum charge not only helps assess their health and recharge capacity but also allows us to see that they are operating as expected and are reliable under actual use conditions. This test will be done two times. Once before the vibrational test and once after the vacuum test.
+== Warning
+ Never leave a lithium-ion battery unattended during the test. In case of swelling, venting, or rapid temperature increase (>45°C in < 10 Seconds), immediately stop the test and remove the battery to a fire-safe location. 
 
 
 = Procedure
 == Set up
-Connect the battery leads to the test station. Like the multimeter, connect the red lead to the positive lead and the black lead to the negative lead. Attach a thermocouple to monitor battery surface temperature. A thermocouple is a sensor that measures temperature. It consists of two different types of metals joined together at one end. When the combination end of it is heated there is a current that flows through the thermoelectric circuit. Then your going to configure the parameters on the analyzer. The necassary parameters are listed below.
+Connect the battery leads to the test station. Like the multimeter, connect the red lead to the positive lead and the black lead to the negative lead. Attach a thermocouple to monitor battery surface temperature. A thermocouple is a sensor that measures temperature. It consists of two different types of metals joined together at one end. When the combination end of it is heated there is a current that flows through the thermoelectric circuit. After that, configure the parameters on the analyzer. The necassary parameters are listed below.
 
 == Parameters
 Parameters are used to control and monitor the charging and discharging of a battery over a period of time.
@@ -108,22 +83,17 @@ Parameters are used to control and monitor the charging and discharging of a bat
    - Constant Current : 0.5C So, 660 mA for this 1320 mAh battery 
    - Constant Voltage : Hold at 4.2V until current drops below 0.05C (66 mA)
 
-#text("--", fill: white)
-
-#text("--", fill: white)
-
-#text("--", fill: white)
-
-#text("--", fill: white)
 
 == Charge Cycling Test
+To conduct a charge cycle test on a lithium-ion polymer battery, a programmable power supply, multimeter, battery analyzer, thermal sensor, and possibly a data acquisition system will be required. 
+Begin by connecting the renata battery to a programmable power supply. This makes it possible to safely control the charging voltage and current. Set the charge voltage to 4.2V per cell and set the current to 0.5C. Use a multimeter to double check voltage readings across the terminals before and during the test to ensure the setup is safe and accurate. A battery analyzer automates the charge/discharge cycles, records data like capacity, internal resistance, and cycle life, and makes it possible to set charge/discharge cutoffs. Attach a thermal sensor to the surface of the battery to monitor temperature throughout the test. If the battery exceeds safe temperature limits (usually around 60°C/140°F), the test must stop to prevent thermal runaway. To collect real time data, a data acquisition system or logging software is often used alongside the analyzer. Throughout the test, it is required to repeatedly charge the battery to full capacity and discharge it to the lower voltage limit usually around 3.0V per cell. This will mimick real world usage. This process evaluates battery aging, capacity fade, and safety characteristics over time.
 Begin the automated charge-discharge cycle. Ensuring to log the following data: Voltage(V),Current(mA), Temperature(°C), Capacity (mAh), and Internal resistance. 
-Rest for 30 minutes after charge
-Then you are going to discharge to 3.0V using the Constant Charge method. Discharge at 0.5C (660 mA). Then rest the battery again. Repeat this cycle greater than or equal to 500 cycles.
+Rest for 30 minutes after charge.
+After the rest, discharge to 3.0V using the Constant Charge method. Discharge at 0.5C (660 mA). Then rest the battery again. Repeat this cycle greater than or equal to 500 cycles.
 == Monitor and Observe
 Make sure to watch for any temperature rises. If the battery reaches a temperature greater than 45°C then stop the test. Watch for capacity drops and any swelling, venting, or irregular behavior.
 == Data Analysis
-After a certain amount of cycles it is important to do quality checks on the battery to see how it is performing in between the test. Recommended analysis points include the initial cycle (Cycle 0), an early cycle (Cycle 10), ongoing checks (Every 25 to 50 Cycles), half-life cycle (Cycle 250), and the End-Life Cycle (Cycle 500). The key metrics to assess include capacity, internal resistance (IR), and State of Health (SoH).
+Recommended analysis points include the initial cycle (Cycle 0), an early cycle (Cycle 10), ongoing checks (Every 25 to 50 Cycles), half-life cycle (Cycle 250), and the End-Life Cycle (Cycle 500). The key metrics to assess include capacity, internal resistance (IR), and State of Health (SoH).
 - Capacity (mAh) : Decreases 
 - Internal Resistance (IR) : Increases
 - State of Health (SoH) : Calculated using this formula
