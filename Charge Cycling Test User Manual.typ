@@ -61,6 +61,28 @@ The Charge Cycling Test is a test that requires the repeated charge and discharg
 == Warning
  Never leave a lithium-ion battery unattended during the test. In case of swelling, venting, or rapid temperature increase (>45°C in < 10 Seconds), immediately stop the test and remove the battery to a fire-safe location. 
 
+= Over-Charge and Over-Discharge process
+
+The purpose of overcharging and overdischarging a battery is to test the behavior, saftey mechanisms, and limits of a lithium-ion battery. This test will simulate the scenario of a charger malfunction, user error, or system malfunction. The results of this test include thermal and electrical stability under abnormal operating conditions, activation of protective circuitry i.e. PTCs, CID, BMS FETs (still need to research), onset of thermal runaway or venting events, mechanical deformation like swelling or rupture, and degradation in capacity, voltage response, and internal impedance.
+
+== Equipment for Safety
+This test should take place in a controlled lab the has the following equipment.
+- Fire Suppression System (Class D dry power extinguisher)
+- Fume Extraction Hood or sealed thermal containment box
+- Thermal Runaway Detection System (thermocouple arrays, IR camera monitoring)
+- Blast Sheild or Explosion-Proof Chamber
+- PPE: Face sheild, flame-resistant lab coat, gloves
+
+== Equipment and Instrumentation
+Programmable DC Power Supply : The purpose of this is to apply constant or controlled overvoltage during overcharge testing
+
+Programmable Electronic Load : The purpose of this is to drain the battery during overdischarge with precise control
+
+Battery Analyzer (e.g., Arbin, MACCOR) : The purpose of this is that it performs cycle control, data logging, and abuse testing sequences
+
+Multimeter/Data Acquisition System : The purpose of this is to give real time voltage and current measurements
+
+Thermocouples or IR Camera : The purpose of this is to give surface temperature monitoring at multiple battery locations
 
 = Procedure
 == Set up
@@ -84,7 +106,7 @@ Parameters are used to control and monitor the charging and discharging of a bat
    - Constant Voltage : Hold at 4.2V until current drops below 0.05C (66 mA)
 
 
-== Charge Cycling Test
+== Conducting the Test
 To conduct a charge cycle test on a lithium-ion polymer battery, a programmable power supply, multimeter, battery analyzer, thermal sensor, and possibly a data acquisition system will be required. 
 Begin by connecting the renata battery to a programmable power supply. This makes it possible to safely control the charging voltage and current. Set the charge voltage to 4.2V per cell and set the current to 0.5C. Use a multimeter to double check voltage readings across the terminals before and during the test to ensure the setup is safe and accurate. A battery analyzer automates the charge/discharge cycles, records data like capacity, internal resistance, and cycle life, and makes it possible to set charge/discharge cutoffs. Attach a thermal sensor to the surface of the battery to monitor temperature throughout the test. If the battery exceeds safe temperature limits (usually around 60°C/140°F), the test must stop to prevent thermal runaway. To collect real time data, a data acquisition system or logging software is often used alongside the analyzer. Throughout the test, it is required to repeatedly charge the battery to full capacity and discharge it to the lower voltage limit usually around 3.0V per cell. This will mimick real world usage. This process evaluates battery aging, capacity fade, and safety characteristics over time.
 Begin the automated charge-discharge cycle. Ensuring to log the following data: Voltage(V),Current(mA), Temperature(°C), Capacity (mAh), and Internal resistance. 
