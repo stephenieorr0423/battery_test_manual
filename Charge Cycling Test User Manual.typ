@@ -84,6 +84,35 @@ Multimeter/Data Acquisition System : The purpose of this is to give real time vo
 
 Thermocouples or IR Camera : The purpose of this is to give surface temperature monitoring at multiple battery locations
 
+Pressure/Displacement Sensors : The purpose of this is to detect swelling or venting
+
+Thermal Containment Chamber : This device is used for safe observation of thermal events. 
+
+
+== Over charge/discharge Procedure
+- Record the batteries serial number and battery cells serial number.
+- Overcharge a fully charged battery pack with protective circuit board to a total voltage of 9V with
+a 1.0C current until the test is stopped due to a
+high resistance caused by MOSFET activation or a
+maximum of 6 hours. NOTE: MOSFET is a semiconductor device used to switch or amplify electronic signals. This device provides isolation by preventing the direct flow of charges on the gate to the conducting channel.
+
+- Record the voltage at which the MOSFET switch
+activates in the log sheet.
+- Record current, voltage and temperature for all the
+tests.
+
+(Similarly an over-discharge test is run to characterize
+and confirm the over-discharge protection device in the
+battery.)
+- Record battery serial number and battery cells serial number.
+- Over-discharge a battery pack with protective circuit board with a 3.0 C current to 0 A. The safety
+MOSFET should have activated by this point.
+- Report the voltage at which the safety MOSFET
+activates in the log.
+- Record current, voltage and temperature for all the
+tests.
+The internal circuit board should prevent the battery
+pack from going into a reversal condition.
 = Procedure
 == Set up
 Connect the battery leads to the test station. Like the multimeter, connect the red lead to the positive lead and the black lead to the negative lead. Attach a thermocouple to monitor battery surface temperature. A thermocouple is a sensor that measures temperature. It consists of two different types of metals joined together at one end. When the combination end of it is heated there is a current that flows through the thermoelectric circuit. After that, configure the parameters on the analyzer. The necassary parameters are listed below.
