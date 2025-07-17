@@ -74,8 +74,9 @@ This test should take place in a controlled lab the has the following equipment.
 - PPE: Face sheild, flame-resistant lab coat, gloves
 
 == Equipment and Instrumentation
-Programmable DC Power Supply : The purpose of this is to apply constant or controlled overvoltage during overcharge testing
-
+- Programmable DC Power Supply 
+ - The purpose of this is to apply constant or controlled overvoltage during overcharge testing
+ - Model Number : R&S®NGM200
 Programmable Electronic Load : The purpose of this is to drain the battery during overdischarge with precise control
 
 Battery Analyzer (e.g., Arbin, MACCOR) : The purpose of this is that it performs cycle control, data logging, and abuse testing sequences
@@ -89,30 +90,50 @@ Pressure/Displacement Sensors : The purpose of this is to detect swelling or ven
 Thermal Containment Chamber : This device is used for safe observation of thermal events. 
 
 
-== Over charge/discharge Procedure
-- Record the batteries serial number and battery cells serial number.
-- Overcharge a fully charged battery pack with protective circuit board to a total voltage of 9V with
-a 1.0C current until the test is stopped due to a
-high resistance caused by MOSFET activation or a
-maximum of 6 hours. NOTE: MOSFET is a semiconductor device used to switch or amplify electronic signals. This device provides isolation by preventing the direct flow of charges on the gate to the conducting channel.
+== Overcharge Procedure
+Purpose: Determine failure mode under overvoltage condition.
+- Connect battery to programmable DC power supply with current limiting enabled.
+- Set current limit to battery's maximum charge current (1.0 C CC - 1320 mA).
+- Begin with battery at ~30-50% state of charge.
+- Set power supply voltage to start at 4.2V (nominal full charge).
+- Increase charge voltage slowly in steps of +0.1V every 10 minutes, up to 6.0V max or until venting/swelling/thermal runaway is observed.
+- Hold each voltage level for 30 minutes while monitoring:
+ - Cell temperature (abort if >80°C/176°F)
+ - Voltage and current behavior
+ - Physical deformation or gas venting
+- Abort test if any of the following occurs:
+ - Cell exceeds 80°C
+ - Voltage drops under constant current (sign of internal damage)
+ - Audible hissing, swelling, or smoke
 
-- Record the voltage at which the MOSFET switch
-activates in the log sheet.
-- Record current, voltage and temperature for all the
-tests.
+== Overdischarge Procedure
+Purpose: Simulate abnormal deep discharge beyond cut-off voltage.
+- Fully charge battery to 4.2V using manufacturer-specified charge profile.
+- Connect battery to programmable electronic load in constant current (CC) mode.
+- Set discharge current to nominal or maximum rated discharge current.
+- Begin discharge and monitor voltage in real-time.
+- Discharge down to cut-off voltage (typically ~3.0V).
+- Continue discharging past this limit down to 0V or until load terminates (equipment safety cutoff).
+- For destructive testing, continue down to -1.0V reverse voltage only if equipment and containment allow.
+- Watch for:
+ - Sudden voltage drop
+ - Temperature increase (>80°C/176°F)
+ - Irregular current behavior
+- Abort if:
+ - Temperature exceeds safe limit (>80°C/176°F)
+ - Voltage rebounds erratically
+ - Battery swells or shows signs of venting
 
-(Similarly an over-discharge test is run to characterize
-and confirm the over-discharge protection device in the
-battery.)
-- Record battery serial number and battery cells serial number.
-- Over-discharge a battery pack with protective circuit board with a 3.0 C current to 0 A. The safety
-MOSFET should have activated by this point.
-- Report the voltage at which the safety MOSFET
-activates in the log.
-- Record current, voltage and temperature for all the
-tests.
-The internal circuit board should prevent the battery
-pack from going into a reversal condition.
+== Post-Test Actions
+- Let the battery cool in containment for 1 hours before handling.
+- Record:
+ - Voltage, Current, and Tempurature profiles
+ - Time of failure
+ - Failure Voltage
+ - Observed failure mode (i.e swelling, venting, thermal event)
+
+
+
 = Procedure
 == Set up
 Connect the battery leads to the test station. Like the multimeter, connect the red lead to the positive lead and the black lead to the negative lead. Attach a thermocouple to monitor battery surface temperature. A thermocouple is a sensor that measures temperature. It consists of two different types of metals joined together at one end. When the combination end of it is heated there is a current that flows through the thermoelectric circuit. After that, configure the parameters on the analyzer. The necassary parameters are listed below.
