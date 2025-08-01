@@ -56,17 +56,15 @@
 
 #set heading(numbering: "1.")
 
-= Baseline
+= Baseline for Charge Cycling Tests
 A vacuum test measures how well a system or component holds a vacuum, with acceptable changes in parameters depending on the system type and test purpose. In leak detection scenarios, such as vacuum decay testing, a chamber is evacuated and monitored for pressure changes over time. Minimal pressure rise indicates a leak free system. Industry standards vary, autoclaves may require a leak rate of ≤1 mmHg/min, industrial systems should see no more than a 10% rise from base pressure over 24 hours, and high vacuum systems are often limited to a 1% rise. Vacuum furnaces may have stricter standards, such as a 10 microns/hour leak rate, though this depends on chamber volume and application. Temperature fluctuations can influence test results, so sufficient cool down time is essential before evaluating pressure drops. For engine health diagnostics, vacuum readings at idle should range from 17-22 inHg at sea level, decreasing about 1 inHg per 1000 feet of altitude. During a snap throttle test, vacuum should momentarily drop to 0-3 inHg, spike to around 25 inHg, then stabilize signaling healthy valves and piston rings. Deviations such as low, steady vacuum may point to leaks or poor valve timing. Low, fluctuating readings may indicate worn valve guides and high vacuum could stem from early ignition timing or intake restrictions. Ultimately, normal parameter changes in vacuum tests are characterized by limited pressure variation or expected fluctuations, with deviations signaling underlying issues that warrant further investigation.
-== Charge Cycling Test
 The base line of this test is a charge cycling test. Conducting this test is what will happen for each test but the main difference between the tests are its environment.
 == Charge Cycling Test
-The Charge Cycling Test is a test that requires the repeated charge and discharge of a lithium-ion battery. Normal battery use involves repeated charging and discharging cycles. This gradually ages a battery and can trigger internal fault protection systems. These safety systems are designed to prevent battery failures while under harsh conditions and protect surrounding electronic equipment from damage. As lithium-ion batteries are cycled from full to low charge, their capacity slowly degrades, they lose the ability to hold a full charge, and cannot recharge fully like the battery used to when new. With proper use and high-quality construction, these batteries can withstand hundreds to thousands of charge/discharge cycles, depending on how they are used. To ensure efficient and complete charging and discharging, it is important to understand the battery's charging behavior. Cycling the batteries from maximum to minimum charge not only helps assess their health and recharge capacity but also allows us to see that they are operating as expected and are reliable under actual use conditions. This test will be done two times. Once before the vibrational test and once after the vacuum test.
+The Charge Cycling Test is a test that requires the repeated charge and discharge of a lithium-ion battery. Normal battery use involves repeated charging and discharging cycles. This gradually ages a battery and can trigger internal fault protection systems. These safety systems are designed  to prevent battery failures while under harsh conditions and protect surrounding electronic equipment from damage. As lithium-ion batteries are cycled from full to low charge, their capacity slowly degrades, they lose the ability to hold a full charge, and cannot recharge fully like the battery used to when new. With proper use and high-quality construction, these batteries can withstand hundreds to thousands of charge/discharge cycles, depending on how they are used. To ensure efficient and complete charging and discharging, it is important to understand the battery's charging behavior. Cycling the batteries from maximum to minimum charge not only helps assess their health and recharge capacity but also allows us to see that they are operating as expected and are reliable under actual use conditions. This test will be done two times. Once before the vibrational test and once after the vacuum test.
 === Warning
  Never leave a lithium-ion battery unattended during the test. In case of swelling, venting, or rapid temperature increase (>45°C in < 10 Seconds), immediately stop the test and remove the battery to a fire-safe location. 
 
 == Over-Charge and Over-Discharge process
-
 The purpose of overcharging and overdischarging a battery is to test the behavior, saftey mechanisms, and limits of a lithium-ion battery. This test will simulate the scenario of a charger malfunction, user error, or system malfunction. The results of this test include thermal and electrical stability under abnormal operating conditions, activation of protective circuitry i.e. PTCs, CID, BMS FETs (still need to research), onset of thermal runaway or venting events, mechanical deformation like swelling or rupture, and degradation in capacity, voltage response, and internal impedance.
 
 == Equipment for Safety
@@ -182,11 +180,40 @@ This analysis ensures accurate monitoring of the battery's health and longevity 
 == Results
 After this test (about 300-500 cycles), the batteries capacity should decrease but remain above 80% of its nominal value (Find using the SoH equation). Internal Resistance is expected to increase slowly indicating the wear on the battery is normal. Charge and discharge voltage profiles should be consistant between cycles. The temperature should typically stay below 60°C. There should be no signs of physical damage such as swelling, leakage, or deformation. All of these results together confirm wether the battery is performing as expected. 
 = Charge Cycling Test without vacuum and thermal
+Repeatedly charge and discharge the battery in a vacuum chamber (like space), and record:
+Thermal properties: How hot/cold it gets while operating
+Electrical properties: Voltage, current, capacity, efficiency
+Where to look/do:
+- Use a vacuum chamber
+- Use a programmable power supply to charge/discharge
+- Use thermal sensors to measure temperatures on battery surface
+- Use a battery analyzer or DAQ system to monitor voltage, current, etc.
 
 = Charge Cycling Test with vacuum without thermal
+== Set up
+First do a OCV test and then a visual check of the battery, look for any damage, swelling, corrosion, or leakage. Also, make sure that the battery is not fully charged. It should be about 30-60% charged. 
+== Preparing the Vacuum Chamber
+Place the battery in the vacuum on a non-conductive, flat surface. Use a tray to isolate the battery from direct contact with the metal of the vacuum. 
+== Set up instruments
+Connect the vacuum pump to the chamber, make sure the pressure gauge is zeroed, ensure the chamber is sealed and their is a pressure relief system.
+== Vacuum Test
+Start the vacuum pump and gradually reduce the pressure inside the chamber. Bring the pressure down to around 11.6 kPa (87 mmHg) this is simulating about 50,000 feet of altitude. Maintain the vacuum for at least 6 hours. 
+== Monitor and Observation 
+Make sure to check for physical deformation like swelling, gas formation like bubbling or hissing, and leaks or ruptures. Utilize the camera and/or microscope for a more precise oberservation. 
 
+== Restore Pressure
+After 6 hours, slowly return the chamber to atmospheric pressure. A quick pressure change can stress the battery which would mess with the results. 
+
+= Results
+After the test, ensure there is no mass loss, leakage, venting, rupture, fire, or visible deformation. The voltage should remain within acceptable limits.
 = Charge Cycling Test with thermal without vacuum
-
+Is generally executed in ambient pressure through the use of environmental
+chambers. This test is usually executed to subsystem or system level. The test article will be exposed to a series of
+cycles of hot and cold temperatures. The thermal cycling generate an environmental stress in the test article that
+allows to identify material and workmanship defects
 = Charge Cycling Test with vacuum and thermal
-
+This test subjects the test article to a series of cycles of hot and
+cold temperatures in a high vacuum environment. Space simulation chambers and thermal vacuum chambers are
+used to perform this type of test. This test is executed to subsystem or system level. During the development of
+TVCT, are performed functional tests for the performance verification of the subsystem or system.
 
