@@ -4,7 +4,7 @@
 #show: manual.with(
   title: "Vibration Test",
   type_of_manual: "User Manual",
-  description: "Revision 2                     7 July 2025",
+  description: "Revision 2                     10 August 2025",
   // authors: "Mitchell Bailey <@mitbailey>",
   package: "Name of Software",
   license: "",

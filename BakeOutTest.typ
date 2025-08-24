@@ -4,7 +4,7 @@
 #show: manual.with(
   title: "Bake Out Test",
   type_of_manual: "User Manual",
-  description: "Revision 2                     7 July 2025",
+  description: "Revision 2                     15 August 2025",
   // authors: "Mitchell Bailey <@mitbailey>",
   package: "Name of Software",
   license: "",
@@ -64,7 +64,7 @@ The purpose of this test is to prevent these volatile substances from releasing 
 
 = Procedure
 The bakeout procedure consists of heating the flight hardware in a clean, certified vacuum
-system (< 1 x 10-5 Torr pressure) at the highest temperature permitted without endangering the
+system (< 1 x 10-5 Torr pressure/0.0193367747 PSI) at the highest temperature permitted without endangering the
 hardware but at least 10 degree Celsius ( C ) above its in-flight operating extreme, assuming this
 temperature does not exceed the maximum exposure temperature. During this bakeout the
 outgassing level is monitored using a temperature controlled quartz crystal microbalance
@@ -76,4 +76,4 @@ Include measurements and recording of chamber pressure, temperatures (hardware, 
 OWS), and TQCM frequency output. During atmospheric operations include measurements of
 humidity, particulate fallout, air particulate levels and the total hydrocarbon levels. 
 == What is a TQCM
-The TQCM's recommended are temperature controlled quartz crystal microbalances, which sense mass deposition with a change in resonance frequency from a matched set of quartz crystals (cut for minimum temperature change at 0 degrees C, AT cut). The minimum sensitivity level required is 1.56 x 10^-9 grams/cm^2 - Hz)  In order to achieve this sensitivity level and long term stability, thermally matched 15-MHz crystal sets are utilized. Precision temperature control is achieved using a Peltier (thermoelectric) cooler and monitoring thermistor built into the sensor head for active temperature control. In addition, the whole sensor head must be mounted on a temperature controlled heat sink. This combination provides for both the required sensitivity and long term stability for mass deposition rate measurements. 
+The TQCM's recommended are temperature controlled quartz crystal microbalances, which sense mass deposition with a change in resonance frequency from a matched set of quartz crystals (cut for minimum temperature change at 0 degrees C, AT cut). The minimum sensitivity level required is 1.56 x 10^-9 grams/cm^2 - Hz)  In order to achieve this sensitivity level and long term stability, thermally matched 15-MHz crystal sets are utilized. Precision temperature control is achieved using a Peltier (thermoelectric) cooler and monitoring thermistor built into the sensor head for active temperature control. In addition, the whole sensor head must be mounted on a temperature controlled heat sink. This combination provides for both the required sensitivity and long term stability for mass deposition rate measurements.

@@ -4,7 +4,7 @@
 #show: manual.with(
   title: "Vacuum Charge Cycling Test",
   type_of_manual: "User Manual",
-  description: "Revision 2                     7 July 2025",
+  description: "Revision 2                     6 August 2025",
   // authors: "Mitchell Bailey <@mitbailey>",
   package: "Name of Software",
   license: "",
@@ -34,7 +34,7 @@
 
 *PHONE:* 978 412 2248
 
-*EMAIL:* stephenie_orr   student.uml.edu
+*EMAIL:* stephenie_orr student.uml.edu
 
 *WEB:* LoCSST
 ]
@@ -212,8 +212,4 @@ chambers. This test is usually executed to subsystem or system level. The test a
 cycles of hot and cold temperatures. The thermal cycling generate an environmental stress in the test article that
 allows to identify material and workmanship defects
 = Charge Cycling Test with vacuum and thermal
-This test subjects the test article to a series of cycles of hot and
-cold temperatures in a high vacuum environment. Space simulation chambers and thermal vacuum chambers are
-used to perform this type of test. This test is executed to subsystem or system level. During the development of
-TVCT, are performed functional tests for the performance verification of the subsystem or system.
-
+This test subjects the test article to a series of cycles of hot and cold temperatures in a high vacuum environment. Space simulation chambers and thermal vacuum chambers are used to perform this type of test. This test is executed to subsystem or system level. During the development of TVCT, are performed functional tests for the performance verification of the subsystem or system.
