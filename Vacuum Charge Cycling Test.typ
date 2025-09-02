@@ -56,6 +56,7 @@
 
 #set heading(numbering: "1.")
 
+Objective: The objective of a vacuum charge cycling test for a lithium-ion battery is to assess its performance, safety, and reliability under low-pressure conditions. This simulates the operational environment of batteries used in high-altitude or aerospace applications and reveals performance degradation caused by pressure changes. 
 = Baseline for Test
 A vacuum test measures how well a system or component holds a vacuum, with acceptable changes in parameters depending on the system type and test purpose. In leak detection scenarios, such as vacuum decay testing, a chamber is evacuated and monitored for pressure changes over time. Minimal pressure rise indicates a leak free system. Industry standards vary, autoclaves may require a leak rate of ≤1 mmHg/min, industrial systems should see no more than a 10% rise from base pressure over 24 hours, and high vacuum systems are often limited to a 1% rise. Vacuum furnaces may have stricter standards, such as a 10 microns/hour leak rate, though this depends on chamber volume and application. Temperature fluctuations can influence test results, so sufficient cool down time is essential before evaluating pressure drops. For engine health diagnostics, vacuum readings at idle should range from 17-22 inHg at sea level, decreasing about 1 inHg per 1000 feet of altitude. During a snap throttle test, vacuum should momentarily drop to 0-3 inHg, spike to around 25 inHg, then stabilize signaling healthy valves and piston rings. Deviations such as low, steady vacuum may point to leaks or poor valve timing. Low, fluctuating readings may indicate worn valve guides and high vacuum could stem from early ignition timing or intake restrictions. Ultimately, normal parameter changes in vacuum tests are characterized by limited pressure variation or expected fluctuations, with deviations signaling underlying issues that warrant further investigation.
 The base line of this test is a charge cycling test. Conducting this test is what will happen for each test but the main difference between the tests are its environment.
@@ -94,37 +95,37 @@ Thermal Containment Chamber : This device is used for safe observation of therma
 
 == Overcharge Procedure
 Purpose: Determine failure mode under overvoltage condition.
-- Connect battery to programmable DC power supply with current limiting enabled.
-- Set current limit to battery's maximum charge current (1.0 C CC - 1320 mA).
-- Begin with battery at ~30-50% state of charge.
-- Set power supply voltage to start at 4.2V (nominal full charge).
-- Increase charge voltage slowly in steps of +0.1V every 10 minutes, up to 6.0V max or until venting/swelling/thermal runaway is observed.
-- Hold each voltage level for 30 minutes while monitoring:
- - Cell temperature (abort if >80°C/176°F)
- - Voltage and current behavior
- - Physical deformation or gas venting
-- Abort test if any of the following occurs:
- - Cell exceeds 80°C
- - Voltage drops under constant current (sign of internal damage)
- - Audible hissing, swelling, or smoke
+1. Connect battery to programmable DC power supply with current limiting enabled.
+2. Set current limit to battery's maximum charge current (1.0 C CC - 1320 mA).
+3. Begin with battery at ~30-50% state of charge.
+4. Set power supply voltage to start at 4.2V (nominal full charge).
+5. Increase charge voltage slowly in steps of +0.1V every 10 minutes, up to 6.0V max or until venting/swelling/thermal runaway is observed.
+6. Hold each voltage level for 30 minutes while monitoring:
+ a. Cell temperature (abort if >80°C/176°F)
+ b. Voltage and current behavior
+ c. Physical deformation or gas venting
+7.  Abort test if any of the following occurs:
+ a. Cell exceeds 80°C
+ b. Voltage drops under constant current (sign of internal damage)
+ c. Audible hissing, swelling, or smoke
 
 == Overdischarge Procedure
 Purpose: Simulate abnormal deep discharge beyond cut-off voltage.
-- Fully charge battery to 4.2V using manufacturer-specified charge profile.
-- Connect battery to programmable electronic load in constant current (CC) mode.
-- Set discharge current to nominal or maximum rated discharge current.
-- Begin discharge and monitor voltage in real-time.
-- Discharge down to cut-off voltage (typically ~3.0V).
-- Continue discharging past this limit down to 0V or until load terminates (equipment safety cutoff).
-- For destructive testing, continue down to -1.0V reverse voltage only if equipment and containment allow.
-- Watch for:
- - Sudden voltage drop
- - Temperature increase (>80°C/176°F)
- - Irregular current behavior
-- Abort if:
- - Temperature exceeds safe limit (>80°C/176°F)
- - Voltage rebounds erratically
- - Battery swells or shows signs of venting
+1.  Fully charge battery to 4.2V using manufacturer-specified charge profile.
+2. Connect battery to programmable electronic load in constant current (CC) mode.
+3. Set discharge current to nominal or maximum rated discharge current.
+4. Begin discharge and monitor voltage in real-time.
+5. Discharge down to cut-off voltage (typically ~3.0V).
+6. Continue discharging past this limit down to 0V or until load terminates (equipment safety cutoff).
+7. For destructive testing, continue down to -1.0V reverse voltage only if equipment and containment allow.
+8. Watch for:
+ a. Sudden voltage drop
+ b. Temperature increase (>80°C/176°F)
+ c. Irregular current behavior
+9. Abort if:
+ a. Temperature exceeds safe limit (>80°C/176°F)
+ b. Voltage rebounds erratically
+ c. Battery swells or shows signs of venting
 
 == Post-Test Actions
 - Let the battery cool in containment for 1 hours before handling.
@@ -138,7 +139,7 @@ Purpose: Simulate abnormal deep discharge beyond cut-off voltage.
 
 == Procedure
 === Set up
-Connect the battery leads to the test station. Like the multimeter, connect the red lead to the positive lead and the black lead to the negative lead. Attach a thermocouple to monitor battery surface temperature. A thermocouple is a sensor that measures temperature. It consists of two different types of metals joined together at one end. When the combination end of it is heated there is a current that flows through the thermoelectric circuit. After that, configure the parameters on the analyzer. The necassary parameters are listed below.
+Connect the battery leads to the test station. Like the multimeter, connect the red lead to the positive lead and the black lead to the negative lead. Attach a thermocouple to monitor battery surface temperature.  A thermocouple is a sensor that measures temperature. It consists of two different types of metals joined together at one end. When the combination end of it is heated there is a current that flows through the thermoelectric circuit. After that, configure the parameters on the analyzer. The necassary parameters are listed below.
 
 === Parameters
 Parameters are used to control and monitor the charging and discharging of a battery over a period of time.
