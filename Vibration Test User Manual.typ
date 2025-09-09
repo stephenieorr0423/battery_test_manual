@@ -65,14 +65,14 @@ world handling. The Lithium Ion battery is often exposed to continuous vibration
 
 = Equipment
 - Vibration Shaker : This tool generates the vibrations for the battery.
-
+- Slip Tables: Platforms that simulate multi-axis vibration and test large or heavy payloads that would exceed the capabilities of standard shakers
 - Amplifier : Provides power to the shaker to create the desired vibration profile.
 - Vibration Controller : Generates vibration profiles and programmed to control the shaker.
-
+- Head Expanders : Accessories that increase the mounting surface area on a shaker table
 - Accelerometers (Sensors) : Accelerometers are mounted on or near the battery. This is used to measure the input vibration levels. Accelerometers are devices that measure the proper acceleration of an object. Proper acceleration refers to the acceleration (the rate of change of velocity) of the object relative to an observer who is in free fall (that is, relative to an inertial frame of reference)
 - Thermocouples : This is a sensor that measures temperature. It consists of two different types of metals joined together. This thermocouple junction creates a voltage that changes with temperature and is then measured and converted to a temperature reading. 
 - Fixtures : Used to securely mount the battery on the vibration shaker or table.
-
+- Bump Machine : This simulates real world transportation and handling by repeatedly dropping an object from a controlled height onto a surface, applying a controlled impact
 = Procedure
 == Safety
 Ensure the battery is in good condition before you begin the test. Check for swelling, leakage, corrosion, and any kind of physical damage. The battery should be at a low state of charge perferably at 30% charge. This reduces the risk of thermal runaway during testing. The PPE that should be worn during this test are safety glasses, gloves, and lab coats. 
